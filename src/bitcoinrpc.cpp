@@ -329,19 +329,19 @@ string rfc1123Time()
 
 // Micryon: this is an adjustment to go along with the amount banned from the premine wallet
 // See: https://bitcointalk.org/index.php?topic=595999.0
-//Value ValueFromAmountWithFeeMoneySupply(int64 amount)
-//{
-//    if(amount >= 3209869924 * COIN)
-//	{
-//		amount -= 3209869924*COIN;
-//	}
-//	return (double)amount / (double)COIN;
-//}
+Value ValueFromAmountWithFeeMoneySupply(int64 amount)
+{
+    if(amount >= 3209869924 * COIN)
+	{
+		amount -= 3209869924*COIN;
+	}
+	return (double)amount / (double)COIN;
+}
 
-//Value ValueFromAmountWithFee(int64 amount)
-//{
-//	return (double)amount / (double)COIN;
-//}
+Value ValueFromAmountWithFee(int64 amount)
+{
+	return (double)amount / (double)COIN;
+}
 
 static string HTTPReply(int nStatus, const string& strMsg, bool keepalive)
 {

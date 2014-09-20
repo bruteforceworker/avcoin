@@ -46,7 +46,7 @@ unsigned int nStakeMaxAge = 60 * 60 * 24 * 365 * 10;	// stake age of full weight
 unsigned int nStakeTargetSpacing = 15;			// 15 sec block spacing
 
 int64 nChainStartTime = 1397664000; //Wed, 16 Apr 2014 16:00:00 GMT
-int nCoinbaseMaturity = 96; //veljavnost novih kovancev po enem dnevu
+int nCoinbaseMaturity = 8; //veljavnost novih kovancev po 2 minutah
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 CBigNum bnBestChainTrust = 0;
